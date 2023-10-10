@@ -1,0 +1,186 @@
+<!-- EMMET EXAMPLES -->
+<!-- ! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- can generate any tag -->
+<!-- span/div/a/button -->
+<span></span>
+<div></div>
+<a href=""></a>
+<button></button>
+
+<!-- can specify classes and ids -->
+<!-- span.purple -->
+<span class="purple"></span>
+<!-- span#id -->
+<span id="id"></span>
+<!-- div.class-1.class-2#id-1 -->
+<div class="class-1 class-2" id="id-1"></div>
+
+<!-- div is assumed when not specified -->
+<!-- .class -->
+<div class="class"></div>
+<!-- #id -->
+<div id="id"></div>
+<!-- link -->
+<!--  assumes its a sylesheet-->
+<link rel="stylesheet" href="">
+
+<!-- can also specify attributes -->
+<!-- button[type="button"] -->
+<button type="button"></button>
+<!-- [data-selected] -->
+<div data-selected=""></div>
+<!-- [data-selected].active -->
+<div data-selected="" class="active"></div>
+
+<!-- can generate children elements -->
+<!-- .purple>span.cyan -->
+<div class="purple"><span class="cyan"></span></div>
+<!-- header>nav>ul -->
+<header>
+    <nav>
+        <ul></ul>
+    </nav>
+</header>
+<!-- can specify # of same elements -->
+<!-- header>nav>ul*3 -->
+<header>
+    <nav>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </nav>
+</header>
+<!-- can specify data in elements -->
+<!-- header>nav>ul*3{hello world} -->
+<header>
+    <nav>
+        <ul>hello world</ul>
+        <ul>hello world</ul>
+        <ul>hello world</ul>
+    </nav>
+</header>
+<!-- $ return iteration -->
+<!-- header>nav>ul*3{$} -->
+<header>
+    <nav>
+        <ul>1</ul>
+        <ul>2</ul>
+        <ul>3</ul>
+    </nav>
+</header>
+<!-- header>nav>ul*3.class-${$} -->
+<header>
+    <nav>
+        <ul class="class-1">1</ul>
+        <ul class="class-2">2</ul>
+        <ul class="class-3">3</ul>
+    </nav>
+</header>
+<!-- can zerpo-pad $ value -->
+<!-- ul*3.class-$${$$} -->
+<ul class="class-01">01</ul>
+<ul class="class-02">02</ul>
+<ul class="class-03">03</ul>
+
+<!-- can generate siblings -->
+<!-- header+main+footer -->
+<header></header>
+<main></main>
+<footer></footer>
+<!-- header>nav^+main+footer -->
+<header>
+    <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+<!-- placement of "^" after ">" determines heiarchy -->
+<!-- (header>nav)+main+footer -->
+<!-- this works too -->
+<header>
+    <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+<!-- example -->
+<!-- (header>headingnav>ol>li*5>a{Link $})+main+footer -->
+<header>
+    <h2></h2>
+    <nav>
+        <ol>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+            <li><a href="">Link 5</a></li>
+        </ol>
+    </nav>
+</header>
+<main></main>
+<footer></footer>
+<!-- example -->
+<!-- form:post>.group>input:text -->
+<form action="" method="post">
+    <div class="group"><input type="text" name="" id=""></div>
+</form>
+<!-- form:post>(.group>label+input:text)+(.group>label+input:number) -->
+<form action="" method="post">
+    <div class="group"><label for=""></label><input type="text" name="" id=""></div>
+    <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+</form>
+<!-- crtl + shift + a to wrap selection in abbreviation -->
+<p>hello world</p>
+<!-- type your abbreviation in the prompt .class>h1{Title}+span.purple -->
+<div class="class">
+    <h1>Title</h1>
+    <span class="purple">
+        <p>hello world</p>
+    </span>
+</div>
+<!-- generate uls from wrap abbreviation -->
+<div id="page">
+    about
+    contacts
+    news
+    products
+</div>
+<!-- shift-select and enter abbreviation nav>ul.nav>li.nav-item$*>a-->
+<div id="page">
+    <nav>
+        <ul class="nav">
+            <li class="nav-item1">
+                <a href="">about</a>
+            </li>
+            <li class="nav-item2">
+                <a href="">contacts</a>
+            </li>
+            <li class="nav-item3">
+                <a href="">news</a>
+            </li>
+            <li class="nav-item4">
+                <a href="">products</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- ! -->
+<!-- ! -->
+
+
+
+
+
+
+
+
