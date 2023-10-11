@@ -1,0 +1,78 @@
+<!-- html(hyper-text markup langauge) tags link to content/structure of page(s) -->
+<!-- paragraph <p> is a html tag -->
+    <p> hello world </p>
+
+
+<!-- <body> tag refers to all the viewable contents of the page-->
+<!-- input-->
+    <body>
+     paragraph1
+     paragraph2
+     paragraph3   
+    </body>
+<!-- output-->
+    paragraph1paragraph2paragraph3
+<!-- body does not format text/images but tags-->
+<!-- input-->
+<body>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+</body>
+<!-- output-->
+ paragraph1
+
+ paragraph2
+
+ paragraph3
+
+ <!-- headings <h> are larger and bolder to signify they are headings -->
+    <body>
+        <h1>title</h1>
+        <p>paragraph</p>
+    </body>
+   
+<!-- there are 6 levels to headings to allow further text structuring-->
+<body>
+    <h1>title</h1>
+    <h2>paragraph title</h2>
+    <p>paragraph</p>
+</body>
+
+<!-- <strong> tag blods text-->
+    <body>
+        <strong>bold text</strong>
+    </body>
+<!-- <em> italisizes text-->
+    <body>
+        <em>italic text</em>
+    </body>
+
+<!-- element hiearchy is referred to in parent/child/sibling relationships i.e.-->
+<body><!--parent-->
+    <p></p><!--child-->
+</body>
+
+<body>
+    <h1></h1><!--sibling-->
+    <p></p><!--sibling-->
+</body>
+
+<body>
+    <p><!--parent-->
+        <em>text</em><!--child-->
+    </p>
+</body>
+
+<!-- listing contents with no specific order <ul> for list and <li> for item of list-->
+<ul>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ul>
+<!--order lists <ol>-->
+<ol>
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ol>
