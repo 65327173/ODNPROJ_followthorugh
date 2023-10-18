@@ -1,0 +1,74 @@
+/* css selectors  */
+/* type selector
+ will select and style all div elements */
+div {
+
+    color: blue;
+}
+/* class selector
+  will select and style all elements of alert-text class*/
+
+  .alert-text {
+
+    color: red;
+  }
+/* id selector
+  will select and style all elements of title id*/
+
+  #title {
+
+    color: black;
+  }
+/* an element can have many classes but only have 1 id, and an id cant be repeated on a single page. */
+
+/*grouping selector
+can group elements with stlyes they share */
+
+.read, .unread {
+
+    color: aliceblue;
+    background-color: aqua;
+}
+
+.read{
+
+
+}
+
+.unread{
+
+
+}
+
+/* chaining selectors 
+class selecting further*/
+.subsection.header {
+
+    color: aliceblue;
+}
+/* will select only element(s) with both subsection and header classes. 
+can also be used with ids*/
+.subsection#preview{
+
+    color: aqua;
+}
+/* will select the element(s) with subsection class and preview id */
+ 
+/* descendant combinators
+selecting a nested class of selected class
+*/
+.ancestor .contents{
+
+  color: beige;
+}
+/* will all content classes within ancestor class*/
+
+/* "color" sets  elements text color, "background color" sets color to element
+Font */
+content {
+  font-family: 'Courier New', Courier, monospace;/* list families in case primary family isnt supported by the browser*/
+  font-size: 22px; /* size of font(px) */
+  font-weight: 100;/* boldness of text. (700 equivalent to bold)*/
+  text-align: center; /* orientation of text*/
+  
+}

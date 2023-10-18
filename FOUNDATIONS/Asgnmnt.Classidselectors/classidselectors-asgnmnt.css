@@ -1,0 +1,25 @@
+/* attempt 1*/
+.class1 {
+    background-color: pink;
+    font-family: Verdana, sans-serif, DejaVu Sans/* doesnt work */;
+
+}
+
+#second {
+
+    color: blue;
+    font-size: 36px;
+}
+
+#third, #fourth {
+
+    font-size: 24px;
+}
+
+#fourth {
+
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+
