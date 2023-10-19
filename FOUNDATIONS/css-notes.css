@@ -72,3 +72,59 @@ content {
   text-align: center; /* orientation of text*/
   
 }
+
+/*cascade refers to the hiearchy of styling
+ID > class > type */
+.subsection {
+
+  color: red;
+}
+
+.main .list {
+
+  color: blue;
+}
+/* given class main >> class list + subsection
+descendant combinator will take heiarchy over class selector */
+
+#subsection {
+
+  color: red;
+}
+
+.main .list {
+
+  color: blue;
+}
+
+/* given class main >> class list + id subsection
+ID selector will take priority over descendant combinator */
+
+#subsection {
+
+  color: red;
+}
+
+.main #subsection {
+
+  color: blue;
+}
+/* the added class specificity will take priority over ID selector
+
+(*, +, >,etc.) combinator symbols do not add specificty in and of themselves
+
+Inheritance refers to styles inherited by elements descendants despite not being specified 
+
+Rule Order, when an element has to conflicting styles with equal heiarchy, the last defined style is used*/
+
+.subsection {
+
+  color: red;
+}
+
+.main {
+
+  color: blue;
+}
+/* when given element with subsection and main class, blue will be the text color */
+
