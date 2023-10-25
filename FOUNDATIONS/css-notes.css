@@ -128,3 +128,106 @@ Rule Order, when an element has to conflicting styles with equal heiarchy, the l
 }
 /* when given element with subsection and main class, blue will be the text color */
 
+/* BOX model 
+every element is a box on the webpage
+can use border stlye to view these boxes*/
+.box{
+  
+  border: 2px solid red;
+  border-style: dashed;
+}
+/* use padding, margin and border styles to manipulate the box of element */
+
+.box{
+  
+  padding: 1px;/* space between the border of boxand the content of box */
+  margin: 1px;/* space between the borders of box and borders of adjacent boxes */
+  border: 1px;/* space between the margin and padding */
+  height: 1px; /* height of element*/
+  width: 1px; /* width of element*/
+  box-sizing: border-box; /* sets height & width to box instead of being additive. see line 169*/
+  inline-size: 100px; /* height or width of inline px, %, max-content, min-content, fit-content(em), auto
+                          inherit, intial, revert, revert-layer, unset*/
+  block-size: none; /* height or width of block etc. ^^^ */
+  writing-mode: horizontal-tb; /* orientation of elements; horizontal (top bottom), vertical (left right}, vertical (right left),
+  determines the direction of sizing for block and inline size styles above */ 
+}
+
+/*Outer display type
+     block type:
+       -will break onto new line
+       -height and width respected
+       -padding, margin, border will push away elements from box
+       -h1, p
+     inline type:
+       -will not break onto new line
+       -height and width will not apply
+       -top/bottom padding, margins, borders will push away other inlines
+       -a, span, em, strong
+  Inner display type
+    elements inside box arrange in normal flow
+    display: flex converts children in box into flex items, will display in specifications to flexbox */
+html {
+  box-sizing: border-box;
+}
+/* sets webpage to alternative box model */
+.box{
+  box-sizing: inherit; /* styles only need to inherit */
+}
+
+.box {
+/* can specify sizing even further */
+  /* 1 line declaration */
+  margin: 1px 1px 1px 1px;
+  /*individual declaration */
+  margin-top: auto;
+  margin-bottom: auto; 
+  margin-left: auto;
+  margin-right: auto;
+  /*a margin of different elements interact by collapsing in on each other,
+    the highest value is the margin between them, not additive */
+  
+    margin: auto;/* default value is 0, or if space is left next to the element within the box,
+              that value becomes the margin value(horizontal centering) */
+  /* negative margins
+  pulls elements towards instead of pushing */
+  margin: -10px;
+}
+
+.box {
+  /* specify styling and sizing of border further*/
+  /* 1 line declaration */
+  border-right: auto, dashed, aliceblue;
+  /*individual declarations */
+  border-right-color: aqua;
+  border-right-style: dashed;
+  border-right-width: auto;
+}
+
+.box {
+
+  /* specify padding even further */
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+}
+
+.box{
+
+  display:inline-block
+  /* width and height are respected
+    padding, margin, border will push elements 
+    >> will not break onto new line */
+}
+.box {
+  display: block
+  /* element will behave like a block */
+}
+.box {
+  display: inline
+  /* element will behave like a inline */
+}
+
+/*  The "Normal Flow" refers to order elements are placed inside the the browser viewport
+    block level elements are placed in "block flow direction" > writing mode: horizontal tb */
