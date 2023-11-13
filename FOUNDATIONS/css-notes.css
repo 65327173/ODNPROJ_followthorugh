@@ -231,3 +231,30 @@ html {
 
 /*  The "Normal Flow" refers to order elements are placed inside the the browser viewport
     block level elements are placed in "block flow direction" > writing mode: horizontal tb */
+
+  /* FLEXBOX 
+  arrangment of items into rows and columns*/
+
+  .flex-container {
+
+    display:flex; /* declares item as flex-item */
+    display:flexbox; /* declares item as flex-box */
+    flex:auto auto auto; /* manipulates size by growth factor, shorthand notation (flex-grow  flex-shrink  flex-basis)
+    flex value notations: */
+    flex: 0 1 auto; /* flex inital; use intial width/height, make the item inflexible to free space, but allows it to shrink to minimum size*/
+    flex: 1 1 auto; /* flex auto; use intial width/height, flexible to free space,  */
+    flex: 0 0 auto; /* flex none; use intial width/height, fully inflexible,  */ 
+    flex: 1 1 0; /* flex +# sizes proportioned to the flex factor*/
+  }
+
+  .flex-container {
+
+    flex-direction: column; /* orients container in columns instead of the default rows */
+    justify-content: space-between; /* aligns items along main axis(being flex-direction)*/
+    align-items: center;/* aligns items vertically*/
+    gap: 1px;/* adds space between flex items 
+    "primary axis" refers to items bunched at start of the container,
+    "cross axis" refers to itmes stretched out to fill the entire container*/
+  
+  }
+
