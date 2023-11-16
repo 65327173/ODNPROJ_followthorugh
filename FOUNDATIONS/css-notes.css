@@ -237,8 +237,7 @@ html {
 
   .flex-container {
 
-    display:flex; /* declares item as flex-item */
-    display:flexbox; /* declares item as flex-box */
+    display:flex; /* declares items as flex */
     flex:auto auto auto; /* manipulates size by growth factor, shorthand notation (flex-grow  flex-shrink  flex-basis)
     flex value notations: */
     flex: 0 1 auto; /* flex inital; use intial width/height, make the item inflexible to free space, but allows it to shrink to minimum size*/
@@ -250,11 +249,33 @@ html {
   .flex-container {
 
     flex-direction: column; /* orients container in columns instead of the default rows */
-    justify-content: space-between; /* aligns items along main axis(being flex-direction)*/
-    align-items: center;/* aligns items vertically*/
     gap: 1px;/* adds space between flex items 
     "primary axis" refers to items bunched at start of the container,
     "cross axis" refers to itmes stretched out to fill the entire container*/
-  
+    /* "justify" is to postion something along the primary axis, 
+    "align" os th position something alon gthe cross axis, 
+    "content" a group of items that can be distributed,
+    "items" single items that can be positioned individually */
+    /*items and content parameters*/
+    justify-content: flex-start; /* items at start of container */
+    justify-content: flex-end; /* items at end of container */
+    justify-content: center; /* items at center of container */
+    /* content specific */
+    justify-content: space-between; /* aligns items with space between items*/
+    justify-content: space-evenly; /* items evenly spaced in container */
+    justify-content: space-around; /* items space around items in container */
+    /* items specific */
+    align-items: stretch;/* stretch to the size of the container in the given direction*/
+    align-items: baseline; /* aligns items to equal position in given direction */
+    align-self: auto; /* applies to an item instead of all items */
+
+    flex-shrink: auto;/* can prevent shrinking with the use of zero, values are factored to result sizes 
+    the minimum size take priority in the flexbox algorithm(text inputs have a minimum size of 170-200px), textbox will overflow outside of the box */
+    flex-grow: auto;/* values are factored to result sizes */
+    flex-basis: auto;/*conventional way of defining width */
+
+    flex-wrap: auto;/* creates multiple primary axises within a singular container */
+    align-content: auto; /* used to align multiple primary axises within a container */
+    
   }
 
