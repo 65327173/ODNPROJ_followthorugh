@@ -1,0 +1,83 @@
+footer, header, .hero {
+
+    background-color: #1F2937;
+}
+
+.hero-main-text {
+
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.hero-secondary-text, .links li a, footer{
+
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.header-logo-text {
+
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+button {
+background-color: #3882F6;
+color: #f9faf8;  
+}
+
+.information-header-text {
+
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.quote-section {
+
+    background-color: #e5e7eb;
+}
+
+.quote-text {
+
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+}
+
+header {
+
+    display: flex;
+    justify-content: space-around;
+     padding: 0px;
+}
+
+.links {
+    gap: 20px;
+}
+
+body, html{
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
