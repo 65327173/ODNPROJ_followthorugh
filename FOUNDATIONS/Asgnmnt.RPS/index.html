@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+function getComputerChoice() {
+
+let randomNumber = Math.floor(Math.random() * selections.length);
+let computerSelection = selections[randomNumber];
+return computerSelection;
+}
+
+function playRound(player, computer) {
+
+if (player.toLowerCase() === "rock") {
+
+    if (computer === "paper") {
+
+        console.log("you lost");
+        return -1;
+    }
+    else if (computer === "scissors") {
+        
+        console.log("you won");
+        return 1;
+    } else {
+        console.log("you tied");
+        return 0;
+    }
+}
+
+if (player.toLowerCase() === "paper") {
+
+    if (computer === "rock") {
+
+        console.log("you won");
+        return 1;
+    }
+    else if (computer === "scissors") {
+        
+        console.log("you lost");
+        return -1;
+    } else {
+    
+        console.log("you tied");
+        return 0;
+    }
+}
+
+if (player.toLowerCase() === "scissors") {
+
+    if (computer === "paper") {
+
+        console.log("you won");
+        return 1;
+    }
+    else if (computer === "rock") {
+        
+        console.log("you lost");
+        return -1;
+    } else {
+        console.log("you tied");
+        return 0;
+    }
+}
+}
+
+function playGame() {
+
+let player = 0, computer = 0;
+
+for (let i = 0; i <= 4; i++) {
+
+    playerSelection = prompt("move choice:")
+    winner = playRound(playerSelection, getComputerChoice());
+
+    if (winner === -1) {
+
+        computer += 1;
+    }
+    else if (winner === 1) {
+
+        player += 1;
+    }
+    console.log("computer:" + computer + "   " + "player" + player);
+} 
+
+if (computer < player) {
+
+    console.log("YOU WON!!!");
+}
+else if (player < computer) {
+
+    console.log("YOU LOST...");
+}
+else console.log("YOU TIED???");
+
+}
+
+const selections = ["Rock", "Paper", "Scissors"];
+
+console.log(playGame())
+
+    </script>
+</body>
+</html>
